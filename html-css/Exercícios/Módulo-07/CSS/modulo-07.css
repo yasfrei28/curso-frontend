@@ -1,8 +1,4 @@
-@import url('tabelas.css');
-
-* {
-	background: url('../images/codigo.jpg') center top repeat;
-}
+@import url('./tabelas.css');
 
 html {
 	font-family: sans-serif;
@@ -10,7 +6,7 @@ html {
 }
 
 header{
-	background: rgba(0, 0, 0, 0.70);
+	background: rgba(0, 0, 0, 0.788);
 }
 
 p {
@@ -70,7 +66,6 @@ header > h2:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-}
 
 html {
 	font-family: sans-serif;
@@ -100,7 +95,7 @@ h3 {
 }
 
 body {
-	background: url('../images/codigo.jpg') center top repeat #EEEEEE;
+	background: url('../Imagem/calculo.webp') center top repeat #EEEEEE;
 }
 
 section {
