@@ -1,0 +1,132 @@
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container{
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.container{
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    float: left;
+}
+
+header{
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #254159;
+}
+
+h1{
+    font-size: 2.4rem;
+    color: #254159;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2.0rem;
+    color: #254159;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: #254159;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4{
+    font-size: 1.6rem;
+    color: #385772;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+    line-height: 2.0rem;
+    color: #333333;
+}
+
+ol{
+    padding-left: 30px;
+}
+
+ol li{
+    font-size: 1.5rem;
+    color: #454545;
+    margin-bottom: 4px;
+}
+
+section{
+    background-color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+section nav{
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+nav li{
+    background-color: #e6e4e4;
+    margin: 1px 20px 5px 0;
+    padding: 10px;
+}
+
+nav li:hover{
+    background-color: #d1d1d1;
+}
+
+nav a{
+    text-decoration: none;
+    color: #254159;
+}
+
+nav a:hover{
+    color: #385772;
+}
+
+section article{
+    display: block;
+    float: left;
+    width: 70%;
+}
+
+footer{
+    background-color: #254159;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+footer small{
+    font-size: 80%;
+    display: block;
+}
