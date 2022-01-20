@@ -16,7 +16,7 @@ body{
 
 .container{
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     display: block;
     float: left;
@@ -61,6 +61,25 @@ p{
     margin-bottom: 10px;
     line-height: 2.0rem;
     color: #333333;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse form,
+html .cog-form__container, :root:root:root:root:root .cog-form__container {
+    background-color: #b8c8d6 !important;
+}
+
+#tenho-interesse, html .cog-cognito *, html .cog-cognito *::before, html .cog-cognito *::after, :root:root:root:root:root .cog-cognito *, :root:root:root:root:root .cog-cognito *::before, :root:root:root:root:root .cog-cognito *::after {
+    color: #385874 !important;
 }
 
 ol{
@@ -131,6 +150,8 @@ footer small{
     display: block;
 }
 
-span svg{
-    visibility: hidden !important;
+.cognito{
+    height: 380px !important;
+    overflow: hidden !important;
 }
+   
