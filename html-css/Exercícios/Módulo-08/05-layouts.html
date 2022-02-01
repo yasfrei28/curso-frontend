@@ -1,91 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>HTML - Layouts</title>
+		<title>Exemplo de layout</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			* {
-			  box-sizing: border-box;
-			}
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-			body {
-			  font-family: Arial, Helvetica, sans-serif;
-			}
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/modulo-08.css">
 
-			/* Style the header */
-			header {
-			  background-color: #666;
-			  padding: 30px;
-			  text-align: center;
-			  font-size: 35px;
-			  color: white;
-			}
-
-			/* Create two columns/boxes that floats next to each other */
-			nav {
-			  float: left;
-			  width: 30%;
-			   
-			  background: #ccc;
-			  padding: 20px;
-			}
-
-			/* Style the list inside the menu */
-			nav ul {
-			  list-style-type: none;
-			  padding: 0;
-			}
-
-			article {
-			  float: left;
-			  padding: 20px;
-			  width: 70%;
-			  background-color: #f1f1f1;
-			}
-
-			/* Clear floats after the columns */
-			section::after {
-			  background: #ccc;
-			  content: "";
-			  display: table;
-			  clear: both;
-			}
-
-			/* Style the footer */
-			footer {
-			  background-color: #777;
-			  padding: 10px;
-			  text-align: center;
-			  color: white;
-			}
-
-			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-			@media (max-width: 600px) {
-			  nav, article {
-			    width: 100%;
-			    height: auto;
-			  }
-			}
-			</style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
 	</head>
 	<body>
-
 		<header>
-			<h2>Curso Front-end - HTML</h2>
+            <div class="container">
+                <h1>Profissão: Engenheira Front-end</h1>
+                <div><h2>- E B A C -</h2></div>
+                <h3>Escola Britânica de Artes Criativas e Tecnologia</h3>
+            </div>
 		</header>
 
 		<section>
-
 			<nav>
-				<ul>
-					<li><a href="#home">Home</a></li>
+				<ul class="navegacao">
+					<li><a href="./index.html">Home</a></li>
 					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="../Módulo-06/06-formularios.html">Contato</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
 				</ul>
 			</nav>
 
-			<article>
+			<article class="descricao">
 
 				<h1>Título Artigo</h1>
 
@@ -99,8 +46,11 @@
 		</section>
 
 		<footer>
-			<p>Desenvolvido por Marcelo</p>
-		</footer>
+            <div>
+                <p>&copy;Todos os direitos reservados.
+                <small>Desenvolvido por: Yasmim de Freitas</small></p>
+            </div>
+        </footer>
 		
 	</body>
 </html>

@@ -1,20 +1,37 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px 400px;
-  border: 1px solid #2488C7;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(255, 255, 255);
 }
 
-h1, p {
-	font-size: 15px;
-	color: #2488C7;
+.form-container{
+  background-color: rgb(86 113 179);
+  margin: 20px auto;
+  width: 50%;
+  border: 1px solid rgb(21 51 118);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 15px;
+  color: #153376;
+}
+
+section{
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.cabecalho{
+  background-color: rgb(21 51 118);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  line-height: 2.0rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 label {
-	font-size: 12px;
+	font-size: 1.2rem;
 	font-weight: bold;
-	color: #2488C7;
+	color: #153376;
 }
 
 form div {
@@ -29,68 +46,25 @@ form div {
 	width: 100%;
 }
 
-/* Style the header */
-header {
-	margin: 1px 120px 1px 120px;
-  background-color: #FFFFFF;
-  padding: 10px;
-  text-align: center;
-  font-size: 15px;
-  color: #2488C7;
-  border-bottom: 1px solid #2488C7;
-  text-align: center;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  background: #FFFFFF;
-  padding: 1px;
-  text-align: center;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav a {
-	text-decoration: none;
-	font-weight: bold;
-	color: #2691D4;
-}
-
 article {
-  padding: 10px 10px 10px 30px;
-  background-color: #E0E2FF;
-  text-align: left;
-}
-
-/* Clear floats after the columns */
-section::after {
-  background: #ccc;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-footer p {
-	color: white;
-}
-
-/* Style the footer */
-footer {
-  background-color: #2488C7;
   padding: 10px;
-  text-align: center;
+  background-color: rgb(221 223 229);
+  text-align: left;
+  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
-    width: 100%;
     height: auto;
   }
+  header{
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+  }
+  .form-container{
+    width: 90%;
+    margin: 10px auto;
+  }
 }
-
-
