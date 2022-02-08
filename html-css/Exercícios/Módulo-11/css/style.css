@@ -181,25 +181,6 @@ footer small{
     display: block;
 }
 
-@media (max-width: 700px) {
-    section nav{
-        margin: 0 auto 40px auto;
-        width: 60%;
-    }
-    article img{
-        width: 100%;
-    }
-    h1{
-        text-align: center;
-        line-height: 2.7rem;
-    }
-    h4{
-        line-height: 2.0rem;
-    }
-    ol{
-        text-align: left;
-    }
-}
 
 #banner{
     background-image: url('../imagens/banner.png');
@@ -259,6 +240,10 @@ footer small{
     padding: 20px;
 }
 
+#saiba-mais img{
+    border-radius: 30px;
+}
+
 #perguntas-frequentes {
     background-color: #f5e2df;
     padding-top: 40px;
@@ -280,4 +265,58 @@ dd {
     margin-left: 20px;
     margin-bottom: 20px;
     font-size: 1.4rem;
+}
+
+@media (max-width: 700px) {
+    section nav{
+        margin: 0 auto 40px auto;
+        width: 60%;
+    }
+    article img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        line-height: 2.7rem;
+    }
+    h4{
+        line-height: 2.0rem;
+    }
+    ol{
+        text-align: left;
+    }
+    #banner{
+        height: 30vh;
+    }
+    #saiba-mais p,
+    #saiba-mais img,
+    #perguntas-frequentes,
+    #tenho-interesse,
+    section{
+        width: 90%;
+        display: block;
+        float: left;
+        padding: 20px;
+        text-align: justify;
+    }
+    .legenda-container{
+        margin: 5px 2px 0 0;
+        width: 50vw;
+    }
+    .legenda{
+        padding: 5px;
+        margin-bottom: 1.5rem;
+    }
+    .legenda h5,
+    .legenda h4{
+        color: #92556c;
+        line-height: 1.8rem;
+        margin: 3px;
+    }
+    .button-cta{
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+    }
 }
