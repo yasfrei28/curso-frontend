@@ -19,7 +19,6 @@ body{
     padding: 0;
     margin: 0 auto;
     width: 98%;
-    max-width: 1198px;
 }
 
 header{
@@ -44,10 +43,7 @@ section{
 }
 
 section nav{
-    display: block;
-    float: left;
     text-align: center;
-    width: 30%;
     margin: 0 0 40px 20px;
 }
 
@@ -56,11 +52,12 @@ ul{
 }
 
 nav li{
+    display: inline-block;
     background-color: #e7d1cd;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
     font-size: 1.5rem;
+    width: 25%;
 }
 
 nav li:hover{
@@ -79,18 +76,14 @@ nav a:hover{
 section article{
     display: block;
     float: left;
-    width: 100%;
     text-align: justify;
-}
-
-article img{
-    width: 65%;
+    margin: 20px;
 }
 
 h1{
     font-size: 2.5rem;
     color: #2AAD91;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 h2{
@@ -187,8 +180,6 @@ footer small{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height:60vh;
 }
 
 .legenda-container{
@@ -214,7 +205,7 @@ footer small{
 
 .button-cta{
     border-radius: 25px;
-    display: inline-block;
+    display: block;
     background-color: #4b3a41;
     color: #fff;
     font-size: 1.8rem;
@@ -225,11 +216,12 @@ footer small{
     text-decoration: none;
     font-weight: 300;
     margin: 20px auto;
+    float: right;
 }
 
 #saiba-mais{
     background-color: #92556c;
-    padding: 40px 0;
+    padding: 0;
 }
 
 #saiba-mais p,
@@ -237,11 +229,12 @@ footer small{
     width: 45%;
     display: block;
     float: left;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 #saiba-mais img{
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #perguntas-frequentes {
@@ -251,7 +244,7 @@ footer small{
 }
 
 dl {
-    margin: 20px 0 ;
+    margin: 20px;
 }
 dt {
     font-family: 'Open Sans';
@@ -269,8 +262,13 @@ dd {
 
 @media (max-width: 700px) {
     section nav{
-        margin: 0 auto 40px auto;
+        margin: 0 0 20px 0;
+        display: block;
+        float: left;
+    }
+    nav li{
         width: 60%;
+        margin-bottom: 7px;
     }
     article img{
         width: 100%;
@@ -285,23 +283,26 @@ dd {
     ol{
         text-align: left;
     }
-    #banner{
-        height: 30vh;
-    }
-    #saiba-mais p,
-    #saiba-mais img,
     #perguntas-frequentes,
-    #tenho-interesse,
-    section{
-        width: 90%;
+    #tenho-interesse{
+        width: 100%;
         display: block;
         float: left;
-        padding: 20px;
         text-align: justify;
+    }
+    #saiba-mais img{
+        border-radius: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    #saiba-mais p{
+        padding: 0;
+        margin: 20px;
+        width: 90%;
     }
     .legenda-container{
         margin: 5px 2px 0 0;
-        width: 50vw;
+        width: 40vw;
     }
     .legenda{
         padding: 5px;
@@ -312,11 +313,25 @@ dd {
         color: #92556c;
         line-height: 1.8rem;
         margin: 3px;
+        font-size: 1.2rem;
     }
     .button-cta{
         text-align: center;
+        font-size: 1.2rem;
     }
     footer{
         width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1800px) {
+    html{
+        font-size: 150%;
     }
 }
