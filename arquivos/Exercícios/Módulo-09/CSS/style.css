@@ -1,0 +1,139 @@
+body{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+    background-color: #333;
+}
+
+a{
+    color: beige;
+    text-decoration: none;
+}
+
+.cards{
+    height: 400px;
+    border-radius: 5px;
+    width: 300px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    padding: 0px 5px; 
+    background-color: beige;
+    color: #333;
+}
+
+img{
+    border-radius: 50%;
+    width: 250px;
+    margin: 5% 5%;
+}
+
+#grayscale img{
+    filter: grayscale(100%);
+}
+
+#grayscale :hover{
+    filter: grayscale(0%);
+}
+
+#invert img{
+    filter: invert(100%);
+}
+
+#invert :hover{
+    filter: grayscale(0%);
+}
+
+#sepia img{
+    
+    filter: sepia(100%);
+    
+}
+#sepia :hover{
+    filter: grayscale(0%);
+}
+
+#saturate img{
+    filter: saturate(200%);
+}
+#saturate :hover{
+    filter: grayscale(0%);
+}
+
+#blur img{
+    filter: blur(5px);
+}
+
+#blur :hover{
+    filter: grayscale(0%);
+}
+
+#opacity img{
+    filter: opacity(50%);
+}
+
+#opacity :hover{
+    filter: grayscale(0%);
+}
+
+#hue-rotate img{
+    filter: hue-rotate(100deg);
+}
+
+#hue-rotate :hover{
+    filter: grayscale(0%);
+}
+
+#brightness img{
+    filter: brightness(150%);
+}
+
+#brightness :hover{
+    filter: grayscale(0%);
+}
+
+#contrast img{
+    filter: contrast(200%);
+}
+
+#contrast :hover{
+    filter: grayscale(0%);
+}
+
+#drop-shadow img{
+    filter: drop-shadow(-20px 20px 20px);
+}
+
+#drop-shadow :hover{
+    filter: grayscale(0%);
+}
+
+/*galaxyS9/S9+*/
+@media(max-width:600px){
+    body{
+        font-size: 0.8em;
+    }
+    header{
+        font-size: 0.9em;
+    }
+    h2{
+        font-size: 1.0em;
+    }
+    .cards{
+        height: 320px;
+        border-radius: 5px;
+        width: 41.5%;
+        float: left;
+        margin: 2%;
+        text-align: center;
+        padding: 0px 5px; 
+        background-color: rgb(209, 115, 238);
+        color: #333;
+    }
+    
+    img{
+        border-radius: 50%;
+        width: 100%;
+        margin: 5% auto;
+    }
+}
