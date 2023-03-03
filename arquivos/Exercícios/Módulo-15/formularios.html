@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Formulário JavaScript</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="mensagem"></div>
+        
+        <form id="formulario01">
+
+            <h2>Faça seu cadastro:</h2>
+
+            <div>
+                <input type="text" placeholder="digite seu nome" class='campos required'  oninput="validateName()" name="nome">
+                <span class="span_required">digite um nome valido</span>
+            </div><!--Ok-->
+            <div>
+                <input type="email" placeholder="digite seu e-mail" class='campos required' oninput="validateEmail()" name="email">
+                <span class="span_required">digite um e-mail valido</span>
+            </div><!--Ok-->
+            <div>
+                <input type="text" placeholder="digite seu telefone" class='campos required' oninput="validateTel()" name="telefone">
+                <span class="span_required">digite um telefone valido, com DDD</span>
+            </div><!--Ok-->
+            <div>
+                <input type="number" placeholder="digite seu cep" class='campos required' oninput="validateCep()" name="cep">
+                <span class="span_required">digite um cep valido</span>
+            </div><!--Ok-->
+            <div>
+                <input type="text" placeholder="digite sua cidade" class='campos required' oninput="validateCidade()" name="cidade">
+                <span class="span_required">a cidade deve ter no mínimo 3 caracteres</span>
+            </div><!--Ok-->
+            <div>
+                <input type="text" placeholder="digite seu uf" class='campos required' oninput="validateUf()" name="uf" id="uf">
+                <span class="span_required">digite um uf valido</span>
+            </div><!--Ok-->
+            
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+            
+
+        </form>
+
+        <div id="resultado"></div>
+
+    </div>
+
+    <script type="text/javascript" src="./forms.js"></script>
+</body>
+</html>
