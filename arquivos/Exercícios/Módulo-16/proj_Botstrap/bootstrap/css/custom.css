@@ -1,0 +1,40 @@
+header{
+    background-color:  rgb(62, 52, 255) !important;
+    color: black;
+}
+
+.nav-link{
+    color: black !important;
+}
+
+.nav-link:hover{
+    background-color: rgb(72, 69, 136);
+}
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color:  rgb(202, 199, 255) !important;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+.modal-content{
+    padding: 20px;
+    background-color:  rgba(129, 128, 223, 0.945);
+    color: white;
+}
+
+.img-fluid{
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px rgb(2, 0, 150);
+}
