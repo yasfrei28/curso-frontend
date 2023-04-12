@@ -1,0 +1,8 @@
+div.container.w-70{
+ width: 70% !important;
+ margin: 0 auto!important;
+ padding: 0%;
+}
+section#home#sobre{
+    padding: 1rem 0;
+}
